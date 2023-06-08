@@ -4,11 +4,11 @@ import os
 import tkinter as tk
 from tkinter import filedialog
 
-def convert_heic_to_jpg(heic_path, jpg_path):
+def convert_heic_to_jpg(heic_path:str, jpg_path:str):
     image = Image.open(heic_path)
     image.save(jpg_path, "JPEG")
 
-def batch_convert_heic_to_jpg(folder_path):
+def batch_convert_heic_to_jpg(folder_path:str):
     for filename in os.listdir(folder_path):
         if filename.endswith(".heic") or filename.endswith(".HEIC"):
             heic_path = os.path.join(folder_path, filename)
