@@ -33,3 +33,4 @@ python script.py path/to/file.heic -o path/to/file.jpg
 To convert all HEIC files in a folder to JPG:
 python script.py path/to/folder
 
+##https://github.com/novenopatch/convert_heic_to_jpg
